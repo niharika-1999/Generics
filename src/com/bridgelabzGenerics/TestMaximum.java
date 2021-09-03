@@ -1,12 +1,12 @@
 package com.bridgelabzGenerics;
 
 //Given 3 Integers to find maximum
-public class TestMaximum <Float extends Comparable<Float>>
-   {
+public class TestMaximum <String extends Comparable<String>>
+ {
 	
-	Float a,b,c;//class variables
+	String a,b,c;//class variables
 	
-	public TestMaximum(Float a,Float b,Float c)
+	public TestMaximum(String a,String b,String c)
 	{
 		this.a=a;
 		this.b=b;
@@ -14,15 +14,15 @@ public class TestMaximum <Float extends Comparable<Float>>
 	}
 	
 	//To obtain maximum value
-	public Float max()
+	public String max()
 	{
 		return TestMaximum.max(a,b,c);
 	}
 	
 	// Use of compareTo function
-	public static <Float extends Comparable<Float>> Float max(Float a,Float b,Float c)
+	public static <String extends Comparable<String>> String max(String a,String b,String c)
 	{
-		Float max=a;
+		String max=a;
 		if(b.compareTo(max)>0)
 		{
 			max=b;
@@ -36,11 +36,13 @@ public class TestMaximum <Float extends Comparable<Float>>
 	}
 	
 	//Printing maximum value
-	public static<Float> void printMax(Float a,Float b,Float c,Float max)
+	public static<String> void printMax(String a,String b,String c,String max)
 	{
 		System.out.printf("Maximum Number is:",max);
 	}
 	
-   }
+ }
+
+ 
 
    
