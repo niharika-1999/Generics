@@ -1,28 +1,23 @@
 package com.bridgelabzGenerics;
 
 //Given 3 Integers to find maximum
-public class TestMaximum <Float extends Comparable<Float>>
+public class TestMaximum <T extends Comparable<T>>
    {
 	
-	Float a,b,c;//class variables
+	T a,b,c;//class variables
 	
-	public TestMaximum(Float a,Float b,Float c)
+	public TestMaximum(T a,T b,T c)//Constructors for 3 variables
 	{
 		this.a=a;
 		this.b=b;
 		this.c=c;
 	}
 	
-	//To obtain maximum value
-	public Float max()
-	{
-		return TestMaximum.max(a,b,c);
-	}
 	
-	// Use of compareTo function
-	public static <Float extends Comparable<Float>> Float max(Float a,Float b,Float c)
+	// Use of compareTo function for 3 variable
+	public static <T extends Comparable<T>> T max(T a,T b,T c)
 	{
-		Float max=a;
+		T max=a;
 		if(b.compareTo(max)>0)
 		{
 			max=b;
@@ -35,8 +30,8 @@ public class TestMaximum <Float extends Comparable<Float>>
 		return max;
 	}
 	
-	//Printing maximum value
-	public static<Float> void printMax(Float a,Float b,Float c,Float max)
+	//Printing maximum value for 3 variable
+	public static<T> void printMax(T a,T b,T c,T max)
 	{
 		System.out.printf("Maximum Number is:",max);
 	}
