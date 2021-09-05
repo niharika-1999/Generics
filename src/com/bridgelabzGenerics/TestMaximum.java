@@ -37,7 +37,7 @@ public class TestMaximum <T extends Comparable<T>>
 		return max;
 	}
 	
-	// Use of compareTo function for 3 variable
+	// Use of compareTo function for 4 variable
 	public static <T extends Comparable<T>> T max(T a,T b,T c,T d)
 	{
 		T max=a;
