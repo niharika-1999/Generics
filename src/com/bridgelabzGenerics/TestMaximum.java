@@ -38,7 +38,7 @@ public class TestMaximum <String extends Comparable<String>>
 	//Printing maximum value
 	public static<String> void printMax(String a,String b,String c,String max)
 	{
-		System.out.printf("Maximum Number is:",max);
+		System.out.printf("Maximum Number is %s",max);
 	}
 	
  }
