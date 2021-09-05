@@ -33,7 +33,7 @@ public class TestMaximum <T extends Comparable<T>>
 	//Printing maximum value for 3 variable
 	public static<T> void printMax(T a,T b,T c,T max)
 	{
-		System.out.printf("Maximum Number is:",max);
+		System.out.printf("Maximum Number is %s",max);
 	}
 	
    }
