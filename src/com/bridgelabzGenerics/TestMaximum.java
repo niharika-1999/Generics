@@ -38,7 +38,7 @@ public class TestMaximum <Float extends Comparable<Float>>
 	//Printing maximum value
 	public static<Float> void printMax(Float a,Float b,Float c,Float max)
 	{
-		System.out.printf("Maximum Number is:",max);
+		System.out.printf("Maximum Number is %s ",max);
 	}
 	
    }
